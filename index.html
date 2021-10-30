@@ -291,11 +291,11 @@
 			c = document.querySelector("input[name='f_door']").value;
 			d = document.querySelector("input[name='f_identity']").value;
 			localStorage.setItem('f_name', a);
-			localStorage.setItem('f_collage',"  " + b);
+			localStorage.setItem('f_collage',b);
 			localStorage.setItem('f_door', c);
 			localStorage.setItem('f_identity', d);
 			
-			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;"+ b+"　"+a;
+			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;&nbsp;"+ b+"　"+a;
 			document.querySelector("span[id='m_identity']").innerHTML = "&nbsp;&nbsp;&nbsp;出入身份："+d;
 			
 			xhr = new XMLHttpRequest()
